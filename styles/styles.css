@@ -71,3 +71,44 @@ body{
     referencia al padre para que pueda envolver a los hijos flotantes.  
   */
 }
+
+.tweet-details {
+border-top:1px solid  #ccc;
+border-bottom:1px solid  #ccc;
+overflow:hidden;
+line-height: 45px;
+
+}
+
+.tweet-details .tweet-stat {
+display:bock;
+float:left;
+font-size: 16px;
+color:#ccc;
+margin-right:15px;
+}
+
+.tweet-details .tweet-stat span {
+font-weight: :bold;
+color:#000;
+}
+
+.tweet-details .avatar-list li {
+display:block;
+background-color: #ccc;
+border-radius: 15px;
+width: 25px;
+height: 25px;
+line-height: 45px;
+float:left;
+margin:10px 5px 10px 0;
+text-align: center;
+}
+
+.tweet-details .avatar-list {
+display:block;
+overflow: hidden;/*lo pongo de una porque ya estaban todos los hijos flotando*/
+padding:0;
+height: 45px;
+border-left: 1px solid #ccc;
+}
