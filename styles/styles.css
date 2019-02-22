@@ -87,7 +87,24 @@ body{
 }
 
 .tweet-details{
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  overflow: hidden;
+  height: 45px;
+}
 
+.tweet-details .tweet-stat{
+  display: block;
+  float: left;
+  font-size: 16px;
+  color: #999999;
+  line-height: 45px;
+  margin:0 15px 0 0;
+}
+
+.tweet-details .tweet-stat span{
+  color: #000000;
+  font-weight: bold;
 }
 
 .tweet .tweet-details .tweet-details-container{
@@ -117,18 +134,24 @@ font-size:18px;
   }
 
   .tweet .tweet-details .avatar-list{
-    display: inline-block;
-    background-color:#ccc;
-    border-radius: 15px;
-    float:left;
-    margin:3px;
+    display: block;
+    overflow: hidden;
+    padding:0 0 0 15px;
+    border-left:1px solid #f1f1f1;
+    height: 45px;
   }
 
-  .tweet .tweet-details .avatar-list ul li{
+  .tweet .tweet-details .avatar-list li{
+    display: block;
+    background-color:#ccc;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 25px;
     width: 25px;
     height: 25px;
-    display: inline-block;
-   
+    float:left;
+    margin:10px 5px 10px 0; 
+    text-align: center;
   }
   
 
