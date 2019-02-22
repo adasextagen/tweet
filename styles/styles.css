@@ -71,3 +71,16 @@ body{
     referencia al padre para que pueda envolver a los hijos flotantes.  
   */
 }
+.tweet .text{
+  font-weight: normal;
+  font-size: 24px;
+  margin: 5px;
+  padding: 4px;
+}
+
+.tweet .time-date{
+  font-weight: normal;
+  font-size: 15px;
+  color: #ccc;
+  margin: 5px;
+}
