@@ -44,18 +44,19 @@ body{
 
 .tweet .tweet-header .user-name{
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   color: #999999;
 }
 
 .tweet .tweet-header .follow {
   display: block;
-  border:1px solid red;
+  border:1px solid #B41B20;
   border-radius: 50px;
   width: 100px;
   text-align: center;
   padding:6px 0;
-  color:red;
+  color: #B41B20;
+  font-weight: bold;
   text-decoration:none;
   float: right;
 }
@@ -71,3 +72,16 @@ body{
     referencia al padre para que pueda envolver a los hijos flotantes.  
   */
 }
+
+.tweet-entry{
+  font-size: 26px;
+}
+
+.tweet-time-date{
+  font-size: 14px;
+  color: #999999;
+}
+hr{
+  border-color: #F4F3F9;
+}
+
