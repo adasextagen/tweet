@@ -1,3 +1,10 @@
+p,ul{
+  margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
 body{
   background-color: #ccc;
   font-family: Arial, Helvetica, sans-serif;
@@ -64,6 +71,66 @@ body{
   background-color: red;
   color: white;
 }
+
+.tweet .tweet-text {
+  font-size: 24px;
+  color:black;
+  padding:5px 0 5px 0;
+  margin-top:10px;
+  margin-bottom:5px;
+}
+
+.tweet .tweet-text .tweet-date-time{
+  font-weight: normal;
+  font-size: 18px;
+  color: #999999;
+}
+
+.tweet-details{
+
+}
+
+.tweet .tweet-details .tweet-details-container{
+  float:left;
+}
+
+.tweet .tweet-details .tweet-stats-rt{
+font-weight: bold;
+font-size:18px;
+}
+
+.tweet .tweet-details .tweet-rt{
+  font-weight: normal;
+  font-size:18px;
+  color: #999999;
+}
+
+.tweet .tweet-details .tweet-stats-fav{
+  font-weight: bold;
+  font-size:18px;
+  }
+  
+  .tweet .tweet-details .tweet-fav{
+    font-weight: normal;
+    font-size:18px;
+    color: #999999;
+  }
+
+  .tweet .tweet-details .avatar-list{
+    display: inline-block;
+    background-color:#ccc;
+    border-radius: 15px;
+    float:left;
+    margin:3px;
+  }
+
+  .tweet .tweet-details .avatar-list ul li{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+   
+  }
+  
 
 .limpiador{
   clear: both;
