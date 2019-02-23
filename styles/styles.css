@@ -1,3 +1,10 @@
+p,ul{
+  margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
 body{
   background-color: #ccc;
   font-family: Arial, Helvetica, sans-serif;
@@ -64,6 +71,89 @@ body{
   background-color: red;
   color: white;
 }
+
+.tweet .tweet-text {
+  font-size: 24px;
+  color:black;
+  padding:5px 0 5px 0;
+  margin-top:10px;
+  margin-bottom:5px;
+}
+
+.tweet .tweet-text .tweet-date-time{
+  font-weight: normal;
+  font-size: 18px;
+  color: #999999;
+}
+
+.tweet-details{
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  overflow: hidden;
+  height: 45px;
+}
+
+.tweet-details .tweet-stat{
+  display: block;
+  float: left;
+  font-size: 16px;
+  color: #999999;
+  line-height: 45px;
+  margin:0 15px 0 0;
+}
+
+.tweet-details .tweet-stat span{
+  color: #000000;
+  font-weight: bold;
+}
+
+.tweet .tweet-details .tweet-details-container{
+  float:left;
+}
+
+.tweet .tweet-details .tweet-stats-rt{
+font-weight: bold;
+font-size:18px;
+}
+
+.tweet .tweet-details .tweet-rt{
+  font-weight: normal;
+  font-size:18px;
+  color: #999999;
+}
+
+.tweet .tweet-details .tweet-stats-fav{
+  font-weight: bold;
+  font-size:18px;
+  }
+  
+  .tweet .tweet-details .tweet-fav{
+    font-weight: normal;
+    font-size:18px;
+    color: #999999;
+  }
+
+  .tweet .tweet-details .avatar-list{
+    display: block;
+    overflow: hidden;
+    padding:0 0 0 15px;
+    border-left:1px solid #f1f1f1;
+    height: 45px;
+  }
+
+  .tweet .tweet-details .avatar-list li{
+    display: block;
+    background-color:#ccc;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    float:left;
+    margin:10px 5px 10px 0; 
+    text-align: center;
+  }
+  
 
 .limpiador{
   clear: both;
