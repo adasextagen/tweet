@@ -57,18 +57,18 @@ body{
 
 .tweet .tweet-header .follow {
   display: block;
-  border:1px solid red;
+  border:1px solid #980F1C;
   border-radius: 50px;
   width: 100px;
   text-align: center;
   padding:6px 0;
-  color:red;
+  color:#980F1C;
   text-decoration:none;
   float: right;
 }
 
 .tweet .tweet-header .follow:hover {
-  background-color: red;
+  background-color: #980F1C;
   color: white;
 }
 
