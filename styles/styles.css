@@ -1,12 +1,12 @@
 p,ul{
   margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 body{
-  background-color: #ccc;
+  background-color: rgba(241, 238, 238, 0.945);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,69 +20,71 @@ body{
     margin:10px; asignando un solo valor en las 4 direcciones
     margin:10px 20px; asignando un valor en el eje vertical y otro en el horizontal
   */
-  padding:20px;
+  padding:20px 20px 5px 20px;
 }
 
 .tweet .tweet-header{
   overflow: hidden;
   /*
-    overflow: hidde; fuerza al elemento a envolver todo su contenido y además oculta todo lo que exeda su alto.
+    overflow: hidden; fuerza al elemento a envolver todo su contenido y además oculta todo lo que exeda su alto.
   */
 }
 
 .tweet .tweet-header .avatar{
-  width: 60px;
-  height: 60px;
-  background-color:#ccc;
+  width: 50px;
+  height: 50px;
+  background-color:rgb(218, 216, 216);
   border-radius: 30px;
   float:left;
 }
 
 .tweet .tweet-header .user{
   float: left;
-  margin: 10px 0 0 15px;
+  margin: 5px 0 0 10px;
 }
 
 .tweet .tweet-header .account-name{
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
 }
 
 .tweet .tweet-header .user-name{
   font-weight: normal;
-  font-size: 18px;
+  font-size: 15px;
   color: #999999;
 }
 
 .tweet .tweet-header .follow {
   display: block;
-  border:1px solid red;
-  border-radius: 50px;
+  border:1px solid rgb(184, 6, 6);
+  border-radius: 30px;
   width: 100px;
   text-align: center;
-  padding:6px 0;
-  color:red;
+  padding:6px 2px;
+  color:rgb(184, 6, 6);
+  font-weight: bold;
+  font-size: 15px;
   text-decoration:none;
   float: right;
 }
 
 .tweet .tweet-header .follow:hover {
-  background-color: red;
+  background-color:rgb(184, 6, 6);
   color: white;
 }
 
 .tweet .tweet-text {
   font-size: 24px;
   color:black;
-  padding:5px 0 5px 0;
+  padding:4px 0 4px 0;
   margin-top:10px;
   margin-bottom:5px;
 }
 
 .tweet .tweet-text .tweet-date-time{
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   color: #999999;
 }
 
@@ -96,10 +98,10 @@ body{
 .tweet-details .tweet-stat{
   display: block;
   float: left;
-  font-size: 16px;
+  font-size: 15px;
   color: #999999;
   line-height: 45px;
-  margin:0 15px 0 0;
+  margin:0 14px 0 0;
 }
 
 .tweet-details .tweet-stat span{
@@ -107,6 +109,7 @@ body{
   font-weight: bold;
 }
 
+/*
 .tweet .tweet-details .tweet-details-container{
   float:left;
 }
@@ -130,9 +133,10 @@ font-size:18px;
   .tweet .tweet-details .tweet-fav{
     font-weight: normal;
     font-size:18px;
-    color: #999999;
+    color:;
   }
-
+ */
+ 
   .tweet .tweet-details .avatar-list{
     display: block;
     overflow: hidden;
@@ -143,7 +147,7 @@ font-size:18px;
 
   .tweet .tweet-details .avatar-list li{
     display: block;
-    background-color:#ccc;
+    background-color:rgb(218, 216, 216);
     border-radius: 15px;
     font-size: 12px;
     line-height: 25px;
@@ -154,10 +158,65 @@ font-size:18px;
     text-align: center;
   }
   
-
 .limpiador{
   clear: both;
   /*
     referencia al padre para que pueda envolver a los hijos flotantes.  
   */
 }
+
+.tweet .interactions {
+  padding:0px;
+  list-style: none;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.tweet .interactions li {
+  color: rgb(185, 184, 184);
+  margin: 0px 20px 0px 13px;
+  font-weight: bold;
+  font-size: 12px;
+  display: block;
+  float:left;
+}
+
+.tweet .interactions .clickInteractions{
+  background-color: #ccc;
+  border-radius: 15px;
+  width: 14px;
+  height: 14px;
+  margin:10px 5px 10px 0;
+  }
+
+  .tweet .interactions .clickInteractions:hover{
+    background-color: rgb(139, 212, 236);
+  }
+
+.tweet .reply{
+  border-top:1px solid #f1f1f1;
+  overflow: hidden;
+  background-color: rgb(243, 240, 240);
+  padding: 0px;
+}
+
+  .tweet .reply .avatarReply{
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 18px;
+    background-color: rgb(218, 216, 216);
+    border-radius: 20px;
+  }
+
+  .tweet .reply .replyText{
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(243, 142, 142);
+    padding: 0px 12px;
+    margin:15px 0 0px 0px;
+    width: 485px;
+    line-height: 36px;
+  }
