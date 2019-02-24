@@ -1,163 +1,166 @@
-p,ul{
-  margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-}
-
-body{
-  background-color: #ccc;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.tweet{
-  background-color: #ffffff; 
-  display: block;
-  width: 600px;
-  margin:0 auto;
-  /*
-    margin:10px 20px 10px 20px; asignando valore en 4 direcciones en el orden de las manesillas del reloj
-    margin:10px; asignando un solo valor en las 4 direcciones
-    margin:10px 20px; asignando un valor en el eje vertical y otro en el horizontal
-  */
-  padding:20px;
-}
-
-.tweet .tweet-header{
-  overflow: hidden;
-  /*
-    overflow: hidde; fuerza al elemento a envolver todo su contenido y además oculta todo lo que exeda su alto.
-  */
-}
-
-.tweet .tweet-header .avatar{
-  width: 60px;
-  height: 60px;
-  background-color:#ccc;
-  border-radius: 30px;
-  float:left;
-}
-
-.tweet .tweet-header .user{
-  float: left;
-  margin: 10px 0 0 15px;
-}
-
-.tweet .tweet-header .account-name{
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0;
-}
-
-.tweet .tweet-header .user-name{
-  font-weight: normal;
-  font-size: 18px;
-  color: #999999;
-}
-
-.tweet .tweet-header .follow {
-  display: block;
-  border:1px solid red;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding:6px 0;
-  color:red;
-  text-decoration:none;
-  float: right;
-}
-
-.tweet .tweet-header .follow:hover {
-  background-color: red;
-  color: white;
-}
-
-.tweet .tweet-text {
-  font-size: 24px;
-  color:black;
-  padding:5px 0 5px 0;
-  margin-top:10px;
-  margin-bottom:5px;
-}
-
-.tweet .tweet-text .tweet-date-time{
-  font-weight: normal;
-  font-size: 18px;
-  color: #999999;
-}
-
-.tweet-details{
-  border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1;
-  overflow: hidden;
-  height: 45px;
-}
-
-.tweet-details .tweet-stat{
-  display: block;
-  float: left;
-  font-size: 16px;
-  color: #999999;
-  line-height: 45px;
-  margin:0 15px 0 0;
-}
-
-.tweet-details .tweet-stat span{
-  color: #000000;
-  font-weight: bold;
-}
-
-.tweet .tweet-details .tweet-details-container{
-  float:left;
-}
-
-.tweet .tweet-details .tweet-stats-rt{
-font-weight: bold;
-font-size:18px;
-}
-
-.tweet .tweet-details .tweet-rt{
-  font-weight: normal;
-  font-size:18px;
-  color: #999999;
-}
-
-.tweet .tweet-details .tweet-stats-fav{
-  font-weight: bold;
-  font-size:18px;
+  body {
+    background-color: #999;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
-  .tweet .tweet-details .tweet-fav{
-    font-weight: normal;
-    font-size:18px;
-    color: #999999;
+  .tweet {
+    display:block;
+    background-color: #fff;
+    width: 600px;
+    padding: 25px;
+    margin: 0 auto;
   }
 
-  .tweet .tweet-details .avatar-list{
-    display: block;
+  .tweet .tweetHeader{
     overflow: hidden;
-    padding:0 0 0 15px;
-    border-left:1px solid #f1f1f1;
-    height: 45px;
   }
 
-  .tweet .tweet-details .avatar-list li{
+  .tweet .tweetHeader .icon {
     display: block;
-    background-color:#ccc;
-    border-radius: 15px;
-    font-size: 12px;
-    line-height: 25px;
-    width: 25px;
-    height: 25px;
-    float:left;
-    margin:10px 5px 10px 0; 
+    background-color: #999;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0;
+  }
+
+  .tweet .tweetHeader .user{
+    float: left;
+    margin: 10px 0 0 15px;
+  }
+
+  .tweet .tweetHeader .user .account {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .tweet .tweetHeader .user .username {
+    font-size: 15px;
+    color: #ccc;
+  }
+
+  .tweet .tweetHeader .follow {
+    display: block;
+    float: right;
+    border: 1px solid red;
+    border-radius: 30px;
+    padding: 10px 35px;
+    text-decoration: none;
+    color: red;
     text-align: center;
   }
-  
 
-.limpiador{
-  clear: both;
-  /*
-    referencia al padre para que pueda envolver a los hijos flotantes.  
-  */
-}
+  .tweet .tweetHeader .follow:hover{
+    background-color: red;
+    color: #fff;
+  }
+
+  .tweet .tweetText p{
+    font-size: 25px;
+    margin: 10px 0;
+  }
+
+  .tweet .tweetText .dateHour{
+    font-size:15px;
+    color: #ccc;
+    margin: 0 0;
+  }
+  .tweet .tweetDetails{
+    display:block;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    overflow: hidden;
+    margin-top: 18px;
+    margin-bottom: 0;
+    }
+
+  .tweet .tweetDetails .tweetStat{
+    font-size: 15px;
+    color: #ccc;
+    float: left;
+    margin: 0px 10px 0 0;
+    line-height: 40px;
+  }
+
+  .tweet .tweetDetails span{
+    font-weight: bold;
+    color: #000;
+  }
+
+  .tweet .tweetDetails .iconList{
+    display: block;
+    overflow: hidden;
+    height: 40px;
+    border-left: 1px solid #ccc;
+    margin: 0;
+    padding: 5px 15px;
+  }
+
+  .tweet .tweetDetails .iconList li{
+    list-style: none;
+    display:block;
+    float: left;
+    background-color: #999;
+    border-radius: 40px;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+
+  .tweet .interactions{
+    overflow: hidden;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    margin-top: 0;
+  }
+  .tweet .interactions li,a{
+    display: block;
+    float: left;
+    list-style: none;
+    margin-right: 9px;
+    text-decoration: none;
+    color: #ccc;
+    font-size:15px;
+    font-weight: bold;
+  }
+
+  .tweet .interactions li,a:hover{
+    color: blue;
+  }
+
+  .tweet .interactions .bottomInteractions{
+    background-color: #999;
+    border-radius: 7.5px;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+  }
+  .tweet .interactions .bottomInteractions:hover{
+    background-color: red;
+  }
+
+  .tweet .reply{
+    overflow: hidden;
+    
+  }
+  .tweet .reply .iconReply{
+    display: block;
+    float: left;
+    background-color: #999;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+  }
+
+  .tweet .reply .textReply{
+    margin: 0 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(238, 175, 175);
+    padding: 0px 5px;
+    width: 450px;
+    line-height: 36px;
+  }
