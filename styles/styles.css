@@ -154,6 +154,44 @@ font-size:18px;
     text-align: center;
   }
   
+  .tweet .interactions{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .tweet .interactions li{
+    margin:0 20px 0 0;
+    list-style: none;
+    display: block;
+    float: left;
+  }
+
+  .tweet .interactions li a{
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color:#ccc;
+  }
+
+  .tweet .interactions li a:hover{
+    color:#336699;
+  }
+
+
+  /*combinación de psudoselector hover con classes de hijos*/
+  .tweet .interactions li a:hover .icon{
+    background-color: red;
+  }
+
+  .tweet .interactions li a .icon{
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #ccc;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+  }
 
 .limpiador{
   clear: both;
