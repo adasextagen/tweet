@@ -154,6 +154,55 @@ font-size:18px;
     text-align: center;
   }
   
+  .tweet .interactions li {
+    font-size: 12px;
+    font-weight: bold;
+    color: darkgrey; 
+    display: inline-block;
+         
+  }
+
+  .tweet .icons {
+    background-color: darkgrey;
+    border-radius: 15px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-top: 5px;
+            
+  }
+
+  .tweet .reply {
+    background-color: rgb(225, 229, 231);
+    line-height: 25px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    display: block;
+    margin-top: 8px;
+      
+  }
+
+  .tweet .reply .avatar-reply {
+    background-color: darkgrey;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    
+    }
+
+     
+  .tweet .reply .reply-text {
+    border-color: rgb(235, 138, 138);
+    border-radius: 5px;
+    border-width: 1px;
+    margin-left: 45px;
+    display: inline-block;               
+          
+  }
+
 
 .limpiador{
   clear: both;
