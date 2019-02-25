@@ -20,7 +20,11 @@ body{
     margin:10px; asignando un solo valor en las 4 direcciones
     margin:10px 20px; asignando un valor en el eje vertical y otro en el horizontal
   */
-  padding:20px;
+  padding:25px 0 0 0;
+}
+
+.tweet .side-padded {
+  margin: 0 25px
 }
 
 .tweet .tweet-header{
@@ -61,6 +65,7 @@ body{
   border-radius: 50px;
   width: 100px;
   text-align: center;
+  margin: 15px 0 0 0;
   padding:6px 0;
   color:red;
   text-decoration:none;
@@ -80,9 +85,13 @@ body{
   margin-bottom:5px;
 }
 
+.tweet .tweet-text p {
+  margin-bottom: 10px; 
+}
+
 .tweet .tweet-text .tweet-date-time{
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   color: #999999;
 }
 
@@ -155,8 +164,7 @@ font-size:18px;
   }
   
   .tweet .interactions{
-    margin: 0;
-    padding: 0;
+    padding: 15px 0;
     overflow: hidden;
   }
 
@@ -178,7 +186,6 @@ font-size:18px;
     color:#336699;
   }
 
-
   /*combinación de psudoselector hover con classes de hijos*/
   .tweet .interactions li a:hover .icon{
     background-color: red;
@@ -191,6 +198,40 @@ font-size:18px;
     width: 12px;
     height: 12px;
     margin-right: 5px;
+  }
+
+  .tweet .tweet-reply {
+    padding: 20px 25px;
+    border-top: 1px solid #ccc;
+    background-color: #eee;
+    overflow: hidden;
+  }
+
+  .tweet .tweet-reply .reply-avatar{
+   float: left;
+   display: block;
+   width: 35px;
+   height: 35px;
+   border-radius: 100%;
+   background-color: #ccc;
+   border: 1px solid #ccc;
+   margin-right: 15px
+  }
+
+  .tweet .tweet-reply input{
+    float: left;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    width: 450px
+  }
+
+  .tweet .tweet-reply input:focus {
+    outline: none;
+    border-color: red;
   }
 
 .limpiador{
