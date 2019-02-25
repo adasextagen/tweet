@@ -1,0 +1,175 @@
+ul, p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+body {
+    background-color: #e6ecf0;
+font-family: Arial, Helvetica, sans-serif;}
+
+a {
+    text-decoration: none;    
+    column-rule-style: 
+}
+
+li {
+    list-style: none;
+}
+
+
+.tweet {
+    background-color: #ffffff;
+    width: 550px;
+    display:block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+.userInfo {
+padding: 20px;
+margin-bottom: 10px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    background-color:#cccccc;
+    border-radius: 30px;
+    float: left;
+}
+
+.tweet .userInfo .user {
+    float: left;
+    margin: 0 0 0 5px;
+    width: 70%;
+}
+
+.tweet .userInfo .name {
+    
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+.tweet .userInfo .account {
+
+    color: #cccccc;
+    margin-bottom: 10px;
+  
+
+}
+
+.tweet .userInfo .button {
+    float: right;
+    display: block;
+    color: red;
+    width: 70px;
+    height: 20px;
+    border: 1px solid red;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin: 15px 0 15px 0;
+}
+.tweet .userInfo .button a {
+    color: red;
+}
+.tweet .userInfo .button:hover {
+    background-color:red;
+    color: #ffffff; 
+}
+
+.tweet .copy {
+    
+    margin: 15px 10px 15px 0;
+    clear: both;
+    font-size: 24px;
+}
+
+.dateTime {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.tweetDetails {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    padding: 0 10px 0 10px;;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.tweetDetails .details {
+    display: flex;
+    width:60%;
+  
+}
+
+
+
+.tweetDetails span{
+    font-weight: bold;
+}
+ .tweetDetails .avatars {
+
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    height: 29px;
+    border-left: 1px solid #cccccc;
+    padding: 2.5px 0 0 2px;
+}
+
+.miniAvatar {
+    width: 25px;
+    height: 25px;
+}
+.tweet .interactions {
+    display: flex;
+    width:70%;
+    height:30px;
+    margin: 0 5px 0 5px
+}
+
+.interactions {
+    color: #cccccc;
+    display:flex;
+    margin: 0 30px 0 30px;
+    font-weight: bold;
+}
+
+.interactions li {
+    margin: 0 10px 0 10px;
+}
+
+.tweet .replies {
+    display: flex;
+    background-color: #cccccc;
+    height: 50px;
+
+}
+
+.tweet .replies .my-avatar
+{
+    margin: 10px 5px 5px 20px;
+    width: 30px;
+    height: 30px;
+}
+
+input {
+    height: 30px;
+    width: 450px;
+    margin: 7px 0 5px 20px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+
+
