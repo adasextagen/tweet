@@ -23,6 +23,10 @@ body{
   padding:25px 0 0 0;
 }
 
+.tweet > div {
+
+}
+
 .tweet .side-padded {
   margin: 0 25px
 }
@@ -75,6 +79,18 @@ body{
 .tweet .tweet-header .follow:hover {
   background-color: red;
   color: white;
+}
+
+.tweet .tweet-header .follow:hover .initial {
+  display: none;
+}
+
+.tweet .tweet-header .follow .onMouseHover {
+  display: none;
+}
+
+.tweet .tweet-header .follow:hover .onMouseHover{
+  display: block;
 }
 
 .tweet .tweet-text {
