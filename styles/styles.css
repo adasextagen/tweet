@@ -154,7 +154,9 @@ font-size:18px;
     text-align: center;
   }
   
-
+.tweet .tweet-message {
+  background-color: #ccc;
+}
 .limpiador{
   clear: both;
   /*
