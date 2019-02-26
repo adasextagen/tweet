@@ -7,7 +7,7 @@ p,ul{
 
 body{
   background-color: #ccc;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .tweet{
@@ -20,60 +20,77 @@ body{
     margin:10px; asignando un solo valor en las 4 direcciones
     margin:10px 20px; asignando un valor en el eje vertical y otro en el horizontal
   */
-  padding:20px;
+  padding:40px 40px 0 40px;
 }
 
 .tweet .tweet-header{
   overflow: hidden;
+  margin: 0;
+  height: 50px;
   /*
-    overflow: hidde; fuerza al elemento a envolver todo su contenido y además oculta todo lo que exeda su alto.
+    overflow: hidden; fuerza al elemento a envolver todo su contenido y además oculta todo lo que exeda su alto.
   */
 }
 
 .tweet .tweet-header .avatar{
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-color:#ccc;
-  border-radius: 30px;
+  border-radius: 25px;
   float:left;
 }
 
 .tweet .tweet-header .user{
   float: left;
-  margin: 10px 0 0 15px;
+  margin: 0;
+  padding: 5px 0 0 10px;
 }
 
 .tweet .tweet-header .account-name{
   font-weight: bold;
   font-size: 18px;
   margin: 0;
+  float: left;
+}
+
+.tweet .tweet-header .user .user-cert{
+  width: 14px;
+  height: 14px;
+  background-color: #ccc;
+  border-radius: 7px;
+  margin: 0 0 0 4px;
+  padding: 1px 0 0 0;
 }
 
 .tweet .tweet-header .user-name{
+  display: block;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 13px;
   color: #999999;
+  margin: 0;
 }
 
 .tweet .tweet-header .follow {
   display: block;
-  border:1px solid red;
+  border:1px solid darkred;
   border-radius: 50px;
   width: 100px;
   text-align: center;
-  padding:6px 0;
-  color:red;
+  padding:8px 0;
+  margin: 0 50px 0 0;
+  color: darkred;
   text-decoration:none;
   float: right;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .tweet .tweet-header .follow:hover {
-  background-color: red;
-  color: white;
+  background-color: rgba(139, 0, 0, 0.178);
 }
 
 .tweet .tweet-text {
-  font-size: 24px;
+  font-size: 26px;
   color:black;
   padding:5px 0 5px 0;
   margin-top:10px;
@@ -82,7 +99,7 @@ body{
 
 .tweet .tweet-text .tweet-date-time{
   font-weight: normal;
-  font-size: 18px;
+  font-size: 13px;
   color: #999999;
 }
 
@@ -96,7 +113,7 @@ body{
 .tweet-details .tweet-stat{
   display: block;
   float: left;
-  font-size: 16px;
+  font-size: 13px;
   color: #999999;
   line-height: 45px;
   margin:0 15px 0 0;
@@ -107,30 +124,27 @@ body{
   font-weight: bold;
 }
 
-.tweet .tweet-details .tweet-details-container{
+/* .tweet .tweet-details .tweet-details-container{
   float:left;
-}
+  font-weight: bold;
+} */
 
 .tweet .tweet-details .tweet-stats-rt{
-font-weight: bold;
 font-size:18px;
 }
 
 .tweet .tweet-details .tweet-rt{
-  font-weight: normal;
   font-size:18px;
   color: #999999;
 }
 
 .tweet .tweet-details .tweet-stats-fav{
-  font-weight: bold;
   font-size:18px;
   }
   
   .tweet .tweet-details .tweet-fav{
-    font-weight: normal;
     font-size:18px;
-    color: #999999;
+    color: rgb(148, 148, 148);
   }
 
   .tweet .tweet-details .avatar-list{
@@ -153,7 +167,53 @@ font-size:18px;
     margin:10px 5px 10px 0; 
     text-align: center;
   }
-  
+
+  .tweet .tweet-actions{
+    overflow: hidden;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 0 0 5px;
+  }
+
+  .tweet .tweet-actions p{
+    display: block;
+    float: left;
+    font-size: 11px;
+    color: rgb(148, 148, 148);
+    font-weight: bold;
+    margin: 0 30px 0 0;
+  }
+
+  .tweet .tweet-actions p img{
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    float: left;
+    background-color: #ccc;
+    margin: 13px 10px 13px 0;
+  }
+
+  .tweet .tweet-comment{
+    background-color: rgb(236, 240, 241);
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    overflow: hidden;
+  }
+
+  .tweet .tweet-comment .visitor-avatar{
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50%;
+    
+  }
+
+  .tweet .tweet-comment .visitor-comment{
+
+  }
 
 .limpiador{
   clear: both;
