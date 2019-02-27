@@ -5,9 +5,15 @@ body {
 }
 
 form {
-    display: block;
-    width: 140px;
-    margin: 50px auto 0;
+    position:absolute;
+    width: 150px;
+    height:26px;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+
 }
 
 form label {
@@ -18,6 +24,7 @@ form label {
     display: block;
     padding: 0 0 0 30px;
     position: relative;
+    width: 140px;
 }
 
 /*la coma separa dos selectores que reciben un mismo conjunto de propiedades*/
