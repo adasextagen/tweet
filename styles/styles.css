@@ -1,11 +1,4 @@
-p,ul{
-  margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-}
-
-body{
+  body{
   background-color: #ccc;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -72,25 +65,18 @@ body{
   margin: 15px 0 0 0;
   padding:6px 0;
   color:#980F1C;
+  height: 32px;
+  box-sizing: border-box;
+  color:#ff0000;
+  background-color: #fff;
   text-decoration:none;
   float: right;
+  transition:background-color, 0.5s;
 }
 
 .tweet .tweet-header .follow:hover {
   background-color: #980F1C;
   color: white;
-}
-
-.tweet .tweet-header .follow:hover .initial {
-  display: none;
-}
-
-.tweet .tweet-header .follow .onMouseHover {
-  display: none;
-}
-
-.tweet .tweet-header .follow:hover .onMouseHover{
-  display: block;
 }
 
 .tweet .tweet-text {
