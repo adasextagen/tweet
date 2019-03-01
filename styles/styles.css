@@ -1,5 +1,12 @@
-  body{
-  background-color: #ccc;
+p,ul{
+  margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+body{
+background-color: #ccc;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -75,8 +82,9 @@
 }
 
 .tweet .tweet-header .follow:hover {
-  background-color: #980F1C;
-  color: white;
+background-color: #980F1C;
+background-color:#ff0000;
+color: white;
 }
 
 .tweet .tweet-text {
