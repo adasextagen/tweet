@@ -5,9 +5,13 @@ body {
 }
 
 form {
-    display: block;
+    display: inline-block;
     width: 140px;
-    margin: 50px auto 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
 }
 
 form label {
@@ -28,7 +32,7 @@ form label::before, form label::after{
     width: 16px;
     height: 16px;
     top: 2px;
-    left:4px
+    left:4px;
 }
 
 form label::before{
@@ -52,13 +56,15 @@ form label.checked::before{
 }
 
 form label.checked::after{
-    display: block;
+    display: inline-block;
 }
 
 form label span {
-
+    margin: auto;
 }
 
 form label input {
     display: none;
+    margin:auto;
 }
+
