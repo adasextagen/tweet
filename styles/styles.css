@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-  body{
-=======
 p,ul{
   margin-block-start: 0;
     margin-block-end: 0;
@@ -9,7 +6,6 @@ p,ul{
 }
 
 body{
->>>>>>> 3e79b185ac6df02d43b6778caf2a03d6096ad96c
   background-color: #ccc;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -24,9 +20,6 @@ body{
     margin:10px; asignando un solo valor en las 4 direcciones
     margin:10px 20px; asignando un valor en el eje vertical y otro en el horizontal
   */
-<<<<<<< HEAD
-  padding:40px 40px 0 40px;
-=======
   padding:25px 0 0 0;
 }
 
@@ -35,13 +28,11 @@ body{
 }
 
 .tweet .side-padded {
-  margin: 0 25px
->>>>>>> 51bc25f868da4c795e34209eded2a97ee82cc4f4
+  margin: 0 25px;
 }
 
 .tweet .tweet-header{
   overflow: hidden;
-  margin: 0;
   height: 50px;
   /*
     overflow: hidden; fuerza al elemento a envolver todo su contenido y además oculta todo lo que exeda su alto.
@@ -92,19 +83,6 @@ body{
   border-radius: 50px;
   width: 100px;
   text-align: center;
-<<<<<<< HEAD
-  padding:8px 0;
-  margin: 0 50px 0 0;
-  color: darkred;
-  text-decoration:none;
-  float: right;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.tweet .tweet-header .follow:hover {
-  background-color: rgba(139, 0, 0, 0.178);
-=======
   margin: 15px 0 0 0;
   padding:6px 0;
   height: 32px;
@@ -119,7 +97,6 @@ body{
 .tweet .tweet-header .follow:hover {
   background-color:#ff0000;
   color: white;
->>>>>>> 51bc25f868da4c795e34209eded2a97ee82cc4f4
 }
 
 .tweet .tweet-text {
@@ -136,11 +113,7 @@ body{
 
 .tweet .tweet-text .tweet-date-time{
   font-weight: normal;
-<<<<<<< HEAD
-  font-size: 13px;
-=======
   font-size: 14px;
->>>>>>> 51bc25f868da4c795e34209eded2a97ee82cc4f4
   color: #999999;
 }
 
@@ -208,54 +181,6 @@ font-size:18px;
     margin:10px 5px 10px 0; 
     text-align: center;
   }
-<<<<<<< HEAD
-
-  .tweet .tweet-actions{
-    overflow: hidden;
-    line-height: 40px;
-    text-align: center;
-    padding: 0 0 0 5px;
-  }
-
-  .tweet .tweet-actions p{
-    display: block;
-    float: left;
-    font-size: 11px;
-    color: rgb(148, 148, 148);
-    font-weight: bold;
-    margin: 0 30px 0 0;
-  }
-
-  .tweet .tweet-actions p img{
-    display: block;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    float: left;
-    background-color: #ccc;
-    margin: 13px 10px 13px 0;
-  }
-
-  .tweet .tweet-comment{
-    background-color: rgb(236, 240, 241);
-    border-top: 1px solid #f1f1f1;
-    border-bottom: 1px solid #f1f1f1;
-    overflow: hidden;
-  }
-
-  .tweet .tweet-comment .visitor-avatar{
-    display: block;
-    float: left;
-    width: 30px;
-    height: 30px;
-    background-color: #ccc;
-    border-radius: 50%;
-    
-  }
-
-  .tweet .tweet-comment .visitor-comment{
-
-=======
   
   .tweet .interactions{
     padding: 15px 0;
@@ -326,7 +251,6 @@ font-size:18px;
   .tweet .tweet-reply input:focus {
     outline: none;
     border-color: red;
->>>>>>> 51bc25f868da4c795e34209eded2a97ee82cc4f4
   }
 
 .limpiador{
