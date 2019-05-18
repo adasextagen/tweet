@@ -5,7 +5,7 @@
     <link type="text/css" rel="stylesheet" href="styles/styles.css"/>
     <script src="comments.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body onload="printComments()">
     <div class="tweet">
       <div class="tweet-header side-padded">
         <img class="avatar"/>
@@ -70,7 +70,13 @@
       </ul>
       <div class="tweet-reply">
         <img class="reply-avatar">
-        <input id="commentBox" type="text" value="" placeholder="tweet your reply"/>
+        <input 
+          id="commentBox" 
+          type="text" 
+          value="" 
+          placeholder="tweet your reply"
+          onkeypress="handleKeyPress(event)"
+        />
         <button type="button" onclick="sendComment()">Enviar</button>
       </div>
       <ul id="commentsList">
